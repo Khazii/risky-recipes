@@ -1,0 +1,39 @@
+@import "../../styles.scss";
+
+$distance: 8px;
+
+button {
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    height: 2px;
+    right: 0;
+    left: 0;
+    background-color: $white;
+  }
+  &:before {
+    opacity: 0;
+    transform: translateY(-$distance);
+    transition: transform 0s $easeOutBack, opacity 0s;
+  }
+  &:after {
+    opacity: 0;
+    transform: translateY($distance/2);
+    transition: transform $duration $easeOutBack, opacity $duration;
+  }
+  &:hover {
+    &:before,
+    &:after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    &:before {
+      transition: transform $duration $easeOutBack, opacity $duration;
+    }
+    &:after {
+      transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+    }
+  }
+}

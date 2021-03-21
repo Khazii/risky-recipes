@@ -1,0 +1,24 @@
+@import "../../../../styles.scss";
+@import "../../../../assets/styles/keyframes.scss";
+@import "../../../../assets/styles/underline-drop.scss";
+
+mat-toolbar {
+  background: $red;
+  color: $white;
+}
+
+.header-title {
+  animation: roll-in $duration * 3 $duration * 2 $easeOutBack forwards;
+  transform-origin: bottom center;
+  transform: rotateX(-90deg);
+  cursor: pointer;
+  opacity: 0;
+}
+
+button {
+  position: relative;
+  color: $white;
+  &:not(:first-of-type) {
+    margin-left: 0.33em;
+  }
+}

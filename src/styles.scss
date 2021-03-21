@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: pacifico;
+  src: url(assets/fonts/Pacifico-Regular.ttf) format("opentype");
+}
+
+$red: #d95d39;
+$black: #211a1d;
+$white: #fdfffc;
+
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$duration: 0.25s;
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: $black;
+  margin: 0;
+
+  max-height: 100vh;
+}
+
+.main-wrapper {
+  height: calc(100vh - 4.51em);
+  overflow-y: scroll;
+}
+
+.main-container {
+  padding: 1.5em 1.5em 0em;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header-title {
+  font-family: pacifico;
+  font-size: 1.6em;
+}
+
+.active {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.mat-tab-body-content {
+  padding: 0px 0.66em;
+}
