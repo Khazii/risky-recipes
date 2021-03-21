@@ -6,8 +6,8 @@ import { name, version } from '../../../../../package.json';
   template: `
     <mat-toolbar>
       <section fxFlex fxLayout="row">
-        <div fxLayoutAlign="start" fxFlex>v{{ projectVersion }}</div>
-        <div fxLayoutAlign="center" fxFlex>
+        <div fxLayoutAlign="start" fxFlex fxHide.lt-sm></div>
+        <div fxLayoutAlign="center" fxLayoutAlign.lt-sm="start" fxFlex>
           <span [routerLink]="'home'" class="header-title">
             {{ headerTitle | replace: '-':' ' | titlecase }}
           </span>

@@ -13,6 +13,9 @@ mat-toolbar {
   transform: rotateX(-90deg);
   cursor: pointer;
   opacity: 0;
+
+  font-family: pacifico;
+  font-size: 1.6em;
 }
 
 button {
@@ -20,5 +23,15 @@ button {
   color: $white;
   &:not(:first-of-type) {
     margin-left: 0.33em;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+  .header-title {
+    font-size: 0.8em;
+  }
+  button {
+    padding: 0 4px;
+    margin: 0px;
   }
 }

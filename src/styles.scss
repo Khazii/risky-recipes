@@ -10,6 +10,8 @@ $white: #fdfffc;
 $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 $duration: 0.25s;
 
+$breakpoint-tablet: 768px;
+
 html,
 body {
   height: 100%;
@@ -32,11 +34,6 @@ body {
   max-width: 1024px;
   margin: 0 auto;
   display: flex;
-}
-
-.header-title {
-  font-family: pacifico;
-  font-size: 1.6em;
 }
 
 .active {

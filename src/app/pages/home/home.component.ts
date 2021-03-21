@@ -5,8 +5,8 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <section>
       <p>F is for food. {{ foodParagraph1 }}</p>
-      <p>{{ foodParagraph2 }}</p>
-      <p>{{ foodParagraph3 }}</p>
+      <p fxHide.lt-sm>{{ foodParagraph2 }}</p>
+      <p fxHide.lt-sm>{{ foodParagraph3 }}</p>
     </section>
     <section fxLayout="row">
       <div fxLayoutAlign="center" fxFlex>

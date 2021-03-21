@@ -29,7 +29,9 @@ import { UserState } from 'src/app/states/user/store/user.state';
       </mat-card-content>
       <mat-card-actions fxLayout="row">
         <div fxLayoutAlign="end" fxFlex>
-          <button mat-button (click)="viewRecipe(recipe)">View Recipe</button>
+          <button mat-button color="primary" (click)="viewRecipe(recipe)">
+            View Recipe
+          </button>
           <button
             [color]="isFav ? 'warn' : 'default'"
             (click)="favouriteRecipe(recipe)"

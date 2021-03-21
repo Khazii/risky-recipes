@@ -29,3 +29,12 @@ mat-chip {
   min-height: 1.5em;
   padding: 0.5em;
 }
+
+@media only screen and (max-width: $breakpoint-tablet) {
+  mat-card-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 6.5em;
+  }
+}

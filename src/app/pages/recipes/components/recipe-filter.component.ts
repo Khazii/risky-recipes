@@ -11,6 +11,7 @@ import { RecipeDatabaseService } from 'src/app/core/api/services/recipe-database
       <form
         [formGroup]="searchForm"
         fxLayout="row"
+        fxLayout.lt-sm="column"
         fxLayoutGap="10px grid"
         (submit)="filterResults()"
       >
@@ -33,7 +34,7 @@ import { RecipeDatabaseService } from 'src/app/core/api/services/recipe-database
             autocomplete="off"
           />
         </mat-form-field>
-        <div>
+        <div fxLayoutAlign="end">
           <button
             mat-flat-button
             [disabled]="searchForm.pristine"
