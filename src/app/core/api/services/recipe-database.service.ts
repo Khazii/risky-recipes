@@ -8,7 +8,7 @@ import { ModelRecipeList } from '../models/recipe.model';
 
 @Injectable({ providedIn: 'root' })
 export class RecipeDatabaseService {
-  recipeUrl = `http://www.recipepuppy.com/api`;
+  recipeUrl = `https://heroku-puppy-recipe.herokuapp.com`;
 
   constructor(private _httpClient: HttpClient, private _store: Store) {}
 

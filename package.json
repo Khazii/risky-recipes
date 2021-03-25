@@ -8,7 +8,8 @@
     "build-deploy": "ng build && firebase deploy",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "proxy": "ng serve -- --proxy-config src/proxy.conf.json"
   },
   "private": true,
   "dependencies": {

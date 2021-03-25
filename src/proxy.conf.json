@@ -1,7 +1,8 @@
 {
-  "/api/*": {
-    "target": "http://www.recipepuppy.com/",
+  "api/*": {
+    "target": "https://heroku-puppy-recipe.herokuapp.com/",
     "secure": false,
+    "logLevel": "debug",
     "changeOrigin": true
   }
 }
